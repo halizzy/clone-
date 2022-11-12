@@ -1,0 +1,215 @@
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-yellow: #fff2de;
+  --color-light-yellow: #fffaf0;
+  --color-middle-yellow: #fff9ee;
+  --color-dark-yellow: #fff1d8;
+  --color-orange-yellow: #ffe0b2;
+  --color-dark-orange-yellow: #ffd894;
+  --color-mint: #d1e9db;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #9e9e9e;
+  --color-black: #000;
+  --color-black30: rgba(0, 0, 0, 0.3);
+
+  --color-a1: #ffebee;
+  --color-a2: #ffcdd2;
+  --color-a3: #ef9a9a;
+  --color-a4: #e57373;
+  --color-a5: #ef5350;
+  --color-a6: #f44336;
+
+  --color-b1: #f3e5f5;
+  --color-b2: #e1bee7;
+  --color-b3: #ce93d8;
+  --color-b4: #ba68c8;
+  --color-b5: #ab47bc;
+  --color-b6: #9c27b0;
+
+  --color-c1: #e8eaf6;
+  --color-c2: #c5cae9;
+  --color-c3: #9fa8da;
+  --color-c4: #7986cb;
+  --color-c5: #5c6bc0;
+  --color-c6: #3f51b5;
+
+  --color-d1: #e0f2f1;
+  --color-d2: #b2dfdb;
+  --color-d3: #80cbc4;
+  --color-d4: #4db6ac;
+  --color-d5: #26a69a;
+  --color-d6: #009688;
+
+  /* Annimation */
+  --animation-duration: 500ms;
+
+  /* border */
+  --border-line: 3px;
+  --border-script-imgBox: 10px;
+}
+
+body {
+  background-color: var(--color-light-white);
+}
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--color-d1);
+}
+.btn-wrap {
+  background-color: var(--color-d2);
+  font-size: 14px;
+  text-align: right;
+}
+.btn-wrap a {
+  line-height: 40px;
+  padding-right: 40px;
+}
+nav {
+  font-size: 14px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  line-height: 100px;
+  padding: 0 30px;
+}
+.sec1 {
+  background-color: var(--color-a2);
+  height: 700px;
+}
+.sec2 {
+  background-color: var(--color-b1);
+}
+.sec2 .wrapper {
+  background-color: var(--color-b2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 .txt {
+  background-color: var(--color-b3);
+  width: 600px;
+  font-size: 18px;
+}
+.sec2 .img {
+  background-color: var(--color-b3);
+  width: 200px;
+  margin: 0 50px;
+}
+.sec3 {
+  background-color: var(--color-c1);
+}
+.sec3 .tit {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+.sec3 .prod-box {
+  display: flex;
+  justify-content: space-around;
+}
+.sec3 .prod-box .prod {
+  background-color: var(--color-c3);
+  width: 300px;
+}
+.sec3 .prod-box .txt {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 10px;
+}
+.sec3 .box1 {
+  background-color: var(--color-c2);
+}
+.sec3 .box2 {
+  background-color: var(--color-c3);
+}
+.sec3 .progress {
+  background-color: var(--color-c4);
+  width: 100px;
+  height: 20px;
+  margin: 25px auto 30px;
+}
+.sec4 {
+  background-color: var(--color-a1);
+}
+.sec4 .tit {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+.sec4 .img_box {
+  background-color: var(--color-a2);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+}
+.sec4 .img_box .box {
+  /* width: 200px; */
+}
+.sec4 .btn {
+  text-align: center;
+  padding: 20px 0;
+}
+.sec4 .btn button {
+  background-color: var(--color-a3);
+  max-width: 300px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 40px;
+}
+footer {
+  background-color: var(--color-d1);
+}
+footer .list {
+  height: 200px;
+  background-color: var(--color-d2);
+}
+footer .copyright {
+  background-color: var(--color-d3);
+  height: 130px;
+  border-top: 1px solid salmon;
+  padding: 20px 0 30px;
+}
+footer .copyright ul {
+  display: flex;
+}
+footer .copyright ul li {
+  padding: 0 10px;
+  position: relative;
+  /* background-color: var(--color-d4); */
+}
+footer .copyright ul li:nth-child(2n) {
+  /* background-color: var(--color-d5); */
+}
+footer .copyright ul li::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 1px;
+  height: 100%;
+  background-color: violet;
+  z-index: 10;
+}
+footer .copyright ul li:last-child::after {
+  display: none;
+}
