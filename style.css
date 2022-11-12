@@ -76,6 +76,48 @@ nav {
   font-size: 14px;
   font-weight: bold;
 }
+nav .ham {
+  background-color: salmon;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+/* nav .ham span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: teal;
+} */
+nav .ham span {
+  width: 20px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: teal;
+  position: relative;
+}
+nav .ham span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aquamarine;
+  top: -8px;
+  left: 0;
+}
+nav .ham span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  bottom: -8px;
+  left: 0;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
